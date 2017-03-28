@@ -21,14 +21,13 @@ def gui_main():
 
     win = curses.newwin(22, 42, 1, 1)
 
-    # stdscr.addstr(0, 0, "Current mode: Typing mode", curses.A_REVERSE)
     x = 0
     y = 0
     refresh_screen(win, x, y)
     while 1:
         c = stdscr.getch()
         refresh = False
-        if c == curses.KEY_ENTER:
+        if c in (curses.KEY_ENTER, 10, 13):
             return
         elif c == curses.KEY_LEFT:
             if x > 0:
