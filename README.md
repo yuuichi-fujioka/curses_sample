@@ -1,3 +1,3 @@
 # curses_sample
 
-see https://docs.python.org/2/library/curses.html#curses.window.border
+see https://docs.python.org/2/library/curses.html
